@@ -67,6 +67,7 @@ namespace ShadowPilot
             // Initialize existing commands
             await AgentCommand.InitializeAsync(this);
             await GitHubIssuesCommand.InitializeAsync(this);
+            await TfsWorkItemsCommand.InitializeAsync(this);
             await DynamicAgentCommand.InitializeAsync(this);
 
             System.Diagnostics.Debug.WriteLine("ShadowPilotPackage: Agent commands initialized");

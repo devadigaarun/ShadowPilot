@@ -20,9 +20,12 @@
     <Compile Include="..\GitHubRemoteParser.cs" Link="Production\GitHubRemoteParser.cs" />
     <Compile Include="..\GitHubRepositoryInfo.cs" Link="Production\GitHubRepositoryInfo.cs" />
     <Compile Include="..\IssueWorkflowPromptBuilder.cs" Link="Production\IssueWorkflowPromptBuilder.cs" />
+    <Compile Include="..\TfsWorkItemQueryBuilder.cs" Link="Production\TfsWorkItemQueryBuilder.cs" />
+    <Compile Include="..\TfsWorkItemSettings.cs" Link="Production\TfsWorkItemSettings.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="..\Tests\Features\GitHubIssueWorkflow.feature" Link="Features\GitHubIssueWorkflow.feature" />
+    <None Include="..\Tests\Features\TfsWorkItemListing.feature" Link="Features\TfsWorkItemListing.feature" />
   </ItemGroup>
 </Project>
