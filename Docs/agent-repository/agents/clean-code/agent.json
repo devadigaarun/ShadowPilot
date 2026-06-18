@@ -1,0 +1,24 @@
+{
+  "name": "Clean Code Agent",
+  "instruction": "instruction.md",
+
+  "prefix": [
+    "instructions/clean-code.guidelines.md"
+  ],
+
+  "suffix": [
+    "instructions/clean-code.test.instructions.md"
+  ],
+
+  "guardrails": [
+    "root:org/guardrails.instructions.md"
+  ],
+  "outputTemplate": "templates/clean-code-output-template.md",
+  "ignoreGlobal": false,
+   "workspaceIntegration": {
+    "copilotInstructions": "copilot-instructions.md",
+    "instructionFiles": [
+      "instructions/clean-code.security.standards.md"
+    ]
+  }
+}

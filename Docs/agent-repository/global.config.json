@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+    "workspaceIntegration": {
+    "enabled": true,
+    "copilotInstructions": "instructions/copilot-instructions.md",
+    "instructionFiles": [
+      "instructions:instructions/*.instructions.md",
+      "instructions:instructions/general.agent.environments.md"
+    ]
+  },
+    "guardrails": [
+      "org/guardrails.instructions.md"
+    ],
+
+    "prefix": [
+      "org/architecture.instructions.md",
+      "org/security.instructions.md",
+      "standards/testing.instructions.md"
+    ],
+
+    "suffix": [
+      "standards/coding-standards.instructions.md"
+    ],
+
+    "outputTemplate": "clean-code-output-template.md"
+}

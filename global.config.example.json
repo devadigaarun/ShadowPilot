@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  
+  "workspaceIntegration": {
+    "enabled": true,
+    "copilotInstructions": "instructions/copilot-instructions.md",
+    "instructionFiles": [
+      "instructions:instructions/*.instructions.md",
+      "instructions:instructions/agent.instructions.md",
+      "templates/default:templates/default-output-template.md",
+      "templates:templates/code-review-template.md"
+    ]
+  },
+  
+  "guardrails": [
+    "org/guardrails.instructions.md"
+  ],
+
+  "prefix": [
+    "org/architecture.instructions.md",
+    "org/security.instructions.md",
+    "standards/testing.instructions.md"
+  ],
+
+  "suffix": [
+    "standards/coding-standards.instructions.md"
+  ],
+
+  "outputTemplate": "templates/default-output-template.md"
+}

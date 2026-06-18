@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="ShadowPilot.c1681ba5-9a14-4b96-a1f3-9992d8a0f39f" Version="6.7" Language="en-US" Publisher="Arun Devadiga" />
+        <DisplayName>ShadowPilot</DisplayName>
+        <Description xml:space="preserve">Shadow Pilot is a Visual Studio extension that automates how developers interact with GitHub Copilot Chat while enabling enterprise-wide governance of AI interactions. It injects structured instruction templates directly into the Copilot Chat window and triggers execution - bringing agent-like functionality to Visual Studio, where such capabilities are currently unavailable.
+</Description>
+        <GettingStartedGuide>ReadMe.md</GettingStartedGuide>
+        <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
+        <Icon>logo.png</Icon>
+        <Tags>GitHub Copilot, AI, Agents, Productivity, Automation</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+</PackageManifest>

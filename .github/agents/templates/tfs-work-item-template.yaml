@@ -1,0 +1,86 @@
+# TFS Work Item Template
+# Replace placeholders with process-specific field names if your TFS template differs.
+
+work_item_types:
+  - Epic
+  - Functionality
+  - Improvement
+  - Work Package
+  - User Story
+  - Task
+
+hierarchy:
+  Epic:
+    child_types: [Functionality]
+  Functionality:
+    child_types: [Improvement]
+  Improvement:
+    child_types: [Work Package]
+  Work Package:
+    child_types: [User Story]
+  User Story:
+    child_types: [Task]
+  Task:
+    child_types: []
+
+required_before_create:
+  - parent_work_item_id
+  - human_approval_id
+  - dry_run_plan_id
+
+common_fields:
+  title: ""
+  description: ""
+  assigned_to: ""
+  area_path: ""
+  iteration_path: ""
+  priority: ""
+  tags:
+    - multi-agent-generated
+  source_references:
+    concept_document_id: ""
+    workflow_run_id: ""
+    requirement_ids: []
+
+work_items:
+  Epic:
+    title_format: "<business capability>"
+    required_fields:
+      - business_goal
+      - success_metrics
+      - scope
+  Functionality:
+    title_format: "<functional area>"
+    required_fields:
+      - capability_description
+      - parent_epic
+  Improvement:
+    title_format: "Improve <capability> for <outcome>"
+    required_fields:
+      - current_gap
+      - expected_improvement
+  Work Package:
+    title_format: "Deliver <cohesive package>"
+    required_fields:
+      - included_slices
+      - dependencies
+  User Story:
+    title_format: "As a <actor>, I want <capability>, so that <benefit>"
+    required_fields:
+      - user_value
+      - acceptance_criteria
+      - test_notes
+  Task:
+    title_format: "Implement <specific technical task>"
+    required_fields:
+      - implementation_steps
+      - validation_steps
+      - owner
+
+linking:
+  parent_child_link_type: System.LinkTypes.Hierarchy
+  trace_links:
+    - requirement_ids
+    - design_package_id
+    - test_summary_id
+    - review_id

@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h"/>
+
+  <Extern href="vsshlids.h"/>
+  <Commands package="guidShadowPilotPackage">
+
+    <Menus>
+      <Menu guid="guidShadowPilotPackageCmdSet" id="SubMenu" priority="0x0100" type="Menu">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="MyMenuGroup"/>
+        <Strings>
+          <ButtonText>Shadow Pilot</ButtonText>
+          <CommandName>Shadow Pilot</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Groups>
+      <Group guid="guidShadowPilotPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+      <Group guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" priority="0x0000">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenu"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId1" priority="0x0200" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+            <ButtonText>Import Agents</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId2" priority="0x0201" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+            <ButtonText></ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId3" priority="0x0202" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+            <ButtonText></ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId4" priority="0x0203" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+            <ButtonText></ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId5" priority="0x0204" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+            <ButtonText></ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId6" priority="0x0205" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+            <ButtonText></ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId7" priority="0x0206" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+            <ButtonText></ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId8" priority="0x0207" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+            <ButtonText></ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId9" priority="0x0208" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+            <ButtonText></ButtonText>
+        </Strings>
+      </Button>
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId10" priority="0x0209" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId11" priority="0x020A" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId12" priority="0x020B" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId13" priority="0x020C" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+		
+				<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId14" priority="0x020D" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId15" priority="0x020E" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId16" priority="0x020F" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId17" priority="0x0210" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId18" priority="0x0211" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId19" priority="0x0212" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+		<Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId20" priority="0x0213" type="Button">
+			<Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+			<CommandFlag>DynamicVisibility</CommandFlag>
+			<CommandFlag>DefaultInvisible</CommandFlag>
+			<CommandFlag>TextChanges</CommandFlag>
+			<Strings>
+				<ButtonText></ButtonText>
+			</Strings>
+		</Button>
+
+	</Buttons>
+
+    <Bitmaps>
+
+      <Bitmap guid="guidImages" href="Resources\GreeterCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
+    </Bitmaps>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidShadowPilotPackage" value="{0a5ca1dc-bb62-4f03-b3c9-0ced54abc3b1}" />
+
+    <GuidSymbol name="guidShadowPilotPackageCmdSet" value="{c2160fd4-9e6d-499c-8891-c9734a5d4ab2}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="SubMenu" value="0x1100"/>
+      <IDSymbol name="SubMenuGroup" value="0x1150"/>
+      <IDSymbol name="DynamicCommandId1" value="0x0200" />
+      <IDSymbol name="DynamicCommandId2" value="0x0201" />
+      <IDSymbol name="DynamicCommandId3" value="0x0202" />
+      <IDSymbol name="DynamicCommandId4" value="0x0203" />
+      <IDSymbol name="DynamicCommandId5" value="0x0204" />
+      <IDSymbol name="DynamicCommandId6" value="0x0205" />
+      <IDSymbol name="DynamicCommandId7" value="0x0206" />
+      <IDSymbol name="DynamicCommandId8" value="0x0207" />
+      <IDSymbol name="DynamicCommandId9" value="0x0208" />
+	  <IDSymbol name="DynamicCommandId10" value="0x0209" />
+	  <IDSymbol name="DynamicCommandId11" value="0x020A" />
+        <IDSymbol name="DynamicCommandId12" value="0x020B" />
+        <IDSymbol name="DynamicCommandId13" value="0x020C" />
+        <IDSymbol name="DynamicCommandId14" value="0x020D" />
+        <IDSymbol name="DynamicCommandId15" value="0x020E" />
+        <IDSymbol name="DynamicCommandId16" value="0x020F" />
+        <IDSymbol name="DynamicCommandId17" value="0x0210" />
+        <IDSymbol name="DynamicCommandId18" value="0x0211" />
+		<IDSymbol name="DynamicCommandId19" value="0x0212" />
+		<IDSymbol name="DynamicCommandId20" value="0x0213" />
+	</GuidSymbol>
+
+    <GuidSymbol name="guidImages" value="{c26cb7f9-1453-4da8-ba33-203f088d5e16}" >
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

@@ -1,0 +1,48 @@
+# Agent Run State Template
+
+workflow_run_id: RUN-0001
+status: not_started | in_progress | blocked | complete
+current_agent: orchestrator-agent
+current_gate: ""
+concept_document:
+  id: ""
+  title: ""
+  source: ""
+requirements:
+  specification_id: ""
+  approved: false
+slicing:
+  slicing_result_id: ""
+  approved: false
+tfs:
+  parent_work_item_id: ""
+  dry_run_plan_id: ""
+  creation_approval_id: ""
+  created_items: []
+design:
+  design_package_id: ""
+  approved: false
+implementation:
+  implementation_summary_id: ""
+  build_result: not_run
+bdd_testing:
+  test_summary_id: ""
+  test_result: not_run
+review:
+  review_id: ""
+  pending_human_decisions: []
+  accepted_comments_implemented: false
+pipeline:
+  pipeline_readiness_id: ""
+  check_in_ready: false
+human_actions_required:
+  - action_id: ""
+    description: ""
+    owner_role: ""
+    blocking: true
+decision_log:
+  - id: DECISION-001
+    made_by: ""
+    decision: ""
+    rationale: ""
+    timestamp_utc: ""

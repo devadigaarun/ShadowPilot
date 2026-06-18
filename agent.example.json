@@ -1,0 +1,29 @@
+{
+  "name": "Code Review Agent",
+  "instruction": "instruction.md",
+
+  "prefix": [
+    "guidelines.md"
+  ],
+
+  "suffix": [
+    "examples.md"
+  ],
+
+  "guardrails": [
+    "org/guardrails/security.instructions.md"
+  ],
+
+  "outputTemplate": "templates/code-review-template.md",
+
+  "ignoreGlobal": false,
+  
+  "workspaceIntegration": {
+    "enabled": true,
+    "copilotInstructions": "instructions/code-review.instructions.md",
+    "instructionFiles": [
+      "templates:templates/code-review-template.md",
+      "examples:examples/*.md"
+    ]
+  }
+}

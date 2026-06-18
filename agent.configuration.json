@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+
+  "workspaceIntegration": {
+    "enabled": true,
+    "copilotInstructions": "copilot-instructions.md",
+    "instructionFiles": [
+      "instructions/*.instructions.md",
+      "instructions/agent.instructions.md"
+    ],
+    "additionalFiles": {
+      "templates/default-output-template.md": "templates/default-output-template.md"
+    }
+  },
+
+  "global": {
+    "guardrails": [
+      "org/guardrails.instructions.md"
+    ],
+
+    "prefix": [
+      "org/architecture.instructions.md",
+      "org/security.instructions.md",
+      "standards/testing.instructions.md"
+    ],
+
+    "suffix": [
+      "standards/coding-standards.instructions.md"
+    ],
+
+    "outputTemplate": "templates/default-output-template.md"
+  },
+  "agents": {
+    "Clean Code Agent": {
+      "instruction": "agents/Clean Code Agent.md"
+    },
+
+    "Code Review Agent": {
+      "instruction": "agents/Code Review Agent.md",
+      "prefix": [
+        "standards/code-review-guidelines.md"
+      ]
+    },
+
+    "Net Migration Agent": {
+      "instruction": "agents/Net Migration Agent.md",
+
+      "ignoreGlobal": false,
+      "guardrails": [
+        "org/guardrails.instructions.md"
+      ],
+      "prefix": [
+        "standards/testing.instructions.md"
+      ],
+      "suffix": [
+        "standards/coding-standards.instructions.md"
+      ],
+      "outputTemplate": "templates/default-output-template.md"
+    }
+  }
+}

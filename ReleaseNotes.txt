@@ -1,0 +1,22 @@
+﻿Version 1.0.0
+• First public release of Shadow Pilot - AI Workflow. One Click.
+• Brings agent-like experience to Visual Studio where GitHub Copilot Agent Mode is unavailable.
+• One-click AI workflow execution - automatically opens Copilot Chat, injects instructions, and triggers execution.
+
+Key Features:
+• Multi-agent support with dedicated Visual Studio menu commands.
+• Automatic workspace integration:
+  - Auto-copies copilot-instructions.md to [Solution]/.github/copilot-instructions.md
+  - Auto-copies *.instructions.* files from AgentsPath/instructions/ to [Solution]/.github/instructions/
+  - Zero configuration - context files refresh on every agent invocation
+• Multi-file instruction bundling for enterprise-grade prompt orchestration.
+• Instruction layering with precedence support (org-level, project-level, agent-level).
+• Configurable Agents Path via Tools → Options → ShadowPilot → General.
+• Centralized instruction loader ensures teams always use the latest agent definitions.
+• Improved reliability, command routing, and UI responsiveness.
+
+Benefits:
+• Team consistency - identical Copilot context automatically distributed.
+• Eliminates manual copy-paste of long prompts.
+• Reproducible AI workflows across projects.
+• Future-safe design ready to adopt official APIs when available.
