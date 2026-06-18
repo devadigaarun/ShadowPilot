@@ -25,6 +25,13 @@
     </Groups>
 
     <Buttons>
+      <Button guid="guidShadowPilotPackageCmdSet" id="GitHubIssuesCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
+        <Strings>
+          <ButtonText>GitHub Issues</ButtonText>
+        </Strings>
+      </Button>
+
       <Button guid="guidShadowPilotPackageCmdSet" id="DynamicCommandId1" priority="0x0200" type="Button">
         <Parent guid="guidShadowPilotPackageCmdSet" id="SubMenuGroup" />
         <CommandFlag>DynamicVisibility</CommandFlag>
@@ -240,6 +247,7 @@
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="SubMenu" value="0x1100"/>
       <IDSymbol name="SubMenuGroup" value="0x1150"/>
+      <IDSymbol name="GitHubIssuesCommandId" value="0x0300" />
       <IDSymbol name="DynamicCommandId1" value="0x0200" />
       <IDSymbol name="DynamicCommandId2" value="0x0201" />
       <IDSymbol name="DynamicCommandId3" value="0x0202" />
