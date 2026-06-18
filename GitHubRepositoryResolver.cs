@@ -4,7 +4,6 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using System;
 using System.IO;
-using System.Text.RegularExpressions;
 
 namespace ShadowPilot
 {
@@ -46,8 +45,7 @@ namespace ShadowPilot
                 throw new InvalidOperationException("The Git repository does not have an origin remote configured.");
             }
 
-            var repository = ParseGitHubRemote(remoteUrl);
-            repository.RemoteUrl = remoteUrl;
+            var repository = GitHubRemoteParser.Parse(remoteUrl);
             repository.LocalPath = Directory.GetParent(gitDirectory)?.FullName;
 
             return repository;
@@ -106,32 +104,6 @@ namespace ShadowPilot
             }
 
             return null;
-        }
-
-        private static GitHubRepositoryInfo ParseGitHubRemote(string remoteUrl)
-        {
-            var httpsMatch = Regex.Match(remoteUrl, @"^https://github\.com/(?<owner>[^/]+)/(?<repo>[^/]+?)(?:\.git)?/?$", RegexOptions.IgnoreCase);
-            if (httpsMatch.Success)
-            {
-                return CreateRepositoryInfo(httpsMatch);
-            }
-
-            var sshMatch = Regex.Match(remoteUrl, @"^(?:git@github\.com:|ssh://git@github\.com/)(?<owner>[^/]+)/(?<repo>[^/]+?)(?:\.git)?/?$", RegexOptions.IgnoreCase);
-            if (sshMatch.Success)
-            {
-                return CreateRepositoryInfo(sshMatch);
-            }
-
-            throw new InvalidOperationException($"The origin remote is not a supported GitHub URL: {remoteUrl}");
-        }
-
-        private static GitHubRepositoryInfo CreateRepositoryInfo(Match match)
-        {
-            return new GitHubRepositoryInfo
-            {
-                Owner = match.Groups["owner"].Value,
-                Name = match.Groups["repo"].Value
-            };
         }
     }
 }
